@@ -2,7 +2,7 @@
  * @Author: feifan
  * @Date: 2020-11-24 13:54:41
  * @LastEditors: feifan
- * @LastEditTime: 2020-11-24 17:08:39
+ * @LastEditTime: 2020-11-26 11:54:32
 -->
 <template>
   <div class="hello">
@@ -11,10 +11,18 @@
 </template>
 
 <script>
+import { add } from "@/libs/util";
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  mounted(){
+    let a = add(1)(2)(3);
+    console.log(a)
+  },
+  methods:{
+    
   }
 }
 </script>
