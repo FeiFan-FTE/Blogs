@@ -11,6 +11,7 @@
     "axios": "^0.21.0",
     "core-js": "^3.6.5",
     "js-cookie": "^2.2.1",
+    "less": "^3.12.2",
     "view-design": "^4.4.0",
     "vue": "^2.6.11",
     "vue-i18n": "^8.22.2",
@@ -26,7 +27,10 @@
     "eslint-plugin-vue": "^6.2.2",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "iview-loader": "^1.2.2",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5"
   },
   "eslintConfig": {
     "root": true,
