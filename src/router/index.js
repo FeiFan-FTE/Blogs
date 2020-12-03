@@ -2,14 +2,14 @@
  * @Author: feifan
  * @Date: 2020-11-24 13:54:41
  * @LastEditors: feifan
- * @LastEditTime: 2020-12-03 10:13:11
+ * @LastEditTime: 2020-12-03 11:03:51
  */
 import Vue from 'vue'
 import Router from 'vue-router'
 import routes from './routers'
 import ViewUI from 'view-design';
 import {  getToken,  setSession,getSession } from '@/libs/util'
-const LOGIN_PAGE_NAME = 'home'
+const LOGIN_PAGE_NAME = 'index'
 Vue.use(Router)
 const router = new Router({
     routes,
@@ -31,6 +31,7 @@ router.beforeEach((to, access, next) => {
         next({
             name: LOGIN_PAGE_NAME // 跳转到登录页
         })
+        console.log(token)
     } else if (!token && to.name === LOGIN_PAGE_NAME&& to.name!="login_forget") {
         // 未登陆且要跳转的页面是登录页
       

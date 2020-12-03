@@ -2,13 +2,13 @@
  * @Author: feifan
  * @Date: 2020-11-26 11:18:03
  * @LastEditors: feifan
- * @LastEditTime: 2020-11-30 10:57:10
+ * @LastEditTime: 2020-12-03 10:32:46
  */
 import Cookies from 'js-cookie'
 // cookie保存的天数
 import config from '@/config'
 const { title, cookieExpires, useI18n } = config
-
+export const TOKEN_KEY = 'Authorization'
 
 export const setToken = (token) => {
     Cookies.set(TOKEN_KEY, token, { expires: cookieExpires || 1 })
@@ -25,6 +25,15 @@ export const localSave = (key, value) => {
 
 export const localRead = (key) => {
     return localStorage.getItem(key) || false
+}
+
+export const setSession = (key, token) => {
+    Cookies.set(key, token, { expires: cookieExpires || 1 })
+}
+export const getSession = (val) => {
+    const s = Cookies.get(val)
+    if (s) return s
+    else return false
 }
 /*
 函数柯里化
