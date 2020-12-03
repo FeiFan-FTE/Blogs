@@ -2,7 +2,7 @@
  * @Author: feifan
  * @Date: 2020-11-24 13:54:41
  * @LastEditors: feifan
- * @LastEditTime: 2020-12-03 14:56:01
+ * @LastEditTime: 2020-12-03 16:52:34
 -->
 <template>
   <div class="home">
@@ -32,6 +32,7 @@
                 </Menu>
             </Header>
             <Content :style="{padding: '0 50px'}">
+                <Scroller :content="content" ></Scroller>
                 <Breadcrumb :style="{margin: '20px 0'}">
                     <BreadcrumbItem>Home</BreadcrumbItem>
                     <BreadcrumbItem>Components</BreadcrumbItem>
@@ -40,6 +41,7 @@
                 <Card>
                     <div style="min-height:500px;">
                         Content
+                        <Login></Login>
                     </div>
                 </Card>
             </Content>
@@ -50,15 +52,19 @@
 </template>
 
 <script>
-import Copyright from '@/components/copyright/copyright'
+import Copyright from '_c/copyright/copyright'
+import Login from '_c/login/login'
+import Scroller from '_c/common/scroller'
 export default {
   name: 'Home',
   components: {
-      Copyright
+      Copyright,
+      Login,
+      Scroller
   },
   data () {
     return {
-
+       content:'文件夹、组织架构、生物分类、国家地区等等，世间万物的大多数结构都是树形结构。使用树控件可以完整展现其中的层级关系，并具有展开收起选择等交互功能。'
     }
   },
   created () {
