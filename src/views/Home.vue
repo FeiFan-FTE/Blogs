@@ -2,11 +2,10 @@
  * @Author: feifan
  * @Date: 2020-11-24 13:54:41
  * @LastEditors: feifan
- * @LastEditTime: 2020-12-03 11:10:59
+ * @LastEditTime: 2020-12-03 14:56:01
 -->
 <template>
   <div class="home">
-
        <div class="layout">
         <Layout>
             <Header>
@@ -39,22 +38,23 @@
                     <BreadcrumbItem>Layout</BreadcrumbItem>
                 </Breadcrumb>
                 <Card>
-                    <div style="min-height: 800px;">
+                    <div style="min-height:500px;">
                         Content
                     </div>
                 </Card>
             </Content>
-            <Footer class="layout-footer-center">2011-2016 &copy; TalkingData</Footer>
+            <Copyright></Copyright>
         </Layout>
         </div>
   </div>
 </template>
 
 <script>
-
+import Copyright from '@/components/copyright/copyright'
 export default {
   name: 'Home',
   components: {
+      Copyright
   },
   data () {
     return {

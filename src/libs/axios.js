@@ -2,7 +2,7 @@
  * @Author: feifan
  * @Date: 2020-11-25 09:21:32
  * @LastEditors: feifan
- * @LastEditTime: 2020-12-03 14:08:40
+ * @LastEditTime: 2020-12-03 14:15:34
  */
 import axios from 'axios'
 import route from '@/router/index'
@@ -52,11 +52,11 @@ class HttpRequest {
         // 响应拦截
         instance.interceptors.response.use(res => {
 
-            if (res.data.msg) {
-                Notice.success({
-                    title: res.data.msg
-                })
-            }
+            // if (res.data.msg) {
+            //     Notice.success({
+            //         title: res.data.msg
+            //     })
+            // }
 
             this.destroy(url)
             const {
@@ -69,18 +69,14 @@ class HttpRequest {
             }
         }, error => {
             let errorInfo = error.response
-            if (errorInfo == undefined) {
-                route.push({
-                    name: 'error_404'
-                })
-            }
+           
             if (!errorInfo) {
                 console.log('request error')
                 return
             }
             switch (errorInfo.status) {
                 case 422:
-                   
+
 
                     break
                 case 401:
