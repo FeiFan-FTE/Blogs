@@ -2,7 +2,7 @@
  * @Author: feifan
  * @Date: 2020-11-24 13:54:41
  * @LastEditors: feifan
- * @LastEditTime: 2020-12-03 11:07:50
+ * @LastEditTime: 2020-12-03 11:10:59
 -->
 <template>
   <div class="home">
@@ -39,7 +39,7 @@
                     <BreadcrumbItem>Layout</BreadcrumbItem>
                 </Breadcrumb>
                 <Card>
-                    <div style="min-height: 200px;">
+                    <div style="min-height: 800px;">
                         Content
                     </div>
                 </Card>

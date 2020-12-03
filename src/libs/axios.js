@@ -2,7 +2,7 @@
  * @Author: feifan
  * @Date: 2020-11-25 09:21:32
  * @LastEditors: feifan
- * @LastEditTime: 2020-11-30 10:55:06
+ * @LastEditTime: 2020-12-03 14:08:40
  */
 import axios from 'axios'
 import route from '@/router/index'
@@ -80,19 +80,7 @@ class HttpRequest {
             }
             switch (errorInfo.status) {
                 case 422:
-                    let msg_str = ''
-                    if (typeof errorInfo.data.msg == 'string') {
-                        Notice.error({
-                            title: errorInfo.data.msg
-                        })
-                    } else {
-                        for (let i in errorInfo.data.msg) {
-                            msg_str += (errorInfo.data.msg[i] + ',')
-                        }
-                        Notice.error({
-                            title: msg_str
-                        })
-                    }
+                   
 
                     break
                 case 401:
