@@ -6,9 +6,9 @@
 -->
 <template>
   <div>
-    <Modal v-model="modal" width="25" footer-hide>
+    <Modal v-model="modal" width="25">
       <p slot="header" style="color: #f60; text-align: center">
-        <span>Delete confirmation</span>
+        <span>登录</span>
       </p>
       <div style="text-align: center">
         <Form ref="formInline" :model="formInline" :rules="ruleInline">
@@ -38,6 +38,12 @@
           </FormItem>
         </Form>
       </div>
+      <div slot="footer">
+        <Row>
+          <Col span="8" style="text-align:left"><Button type="default">找回密码</Button></Col>
+          <Col span="8" offset="8"><Button type="success">注册</Button></Col>
+        </Row>
+      </div>
     </Modal>
   </div>
 </template>
@@ -57,20 +63,20 @@ export default {
         user: [
           {
             required: true,
-            message: "Please fill in the user name",
+            message: "用户名不能为空.",
             trigger: "blur",
           },
         ],
         password: [
           {
             required: true,
-            message: "Please fill in the password.",
+            message: "密码不能为空.",
             trigger: "blur",
           },
           {
             type: "string",
             min: 6,
-            message: "The password length cannot be less than 6 bits",
+            message: "密码不能小于6个字符.",
             trigger: "blur",
           },
         ],
