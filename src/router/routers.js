@@ -12,6 +12,11 @@ export default[
         component: Home
 },
 {
+    path: '/resume',
+    name: 'resume',
+    component:() => import('@/views/resume/index.vue')
+},
+{
     path: '/401',
     name: 'error_401',
 

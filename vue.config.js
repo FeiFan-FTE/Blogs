@@ -19,7 +19,7 @@ module.exports = {
   productionSourceMap: false,
   devServer: {
     open: true,
-    host: '192.168.1.2',
+    host: '127.0.0.1',
     port: 3456,
   }
 }
