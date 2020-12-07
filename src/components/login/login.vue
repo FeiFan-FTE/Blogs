@@ -53,7 +53,7 @@ export default {
   name: "Login",
   data() {
     return {
-      modal: true,
+      modal: false,
       loading: false,
       formInline: {
         user: "",
