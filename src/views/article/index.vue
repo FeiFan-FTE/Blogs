@@ -23,16 +23,25 @@
           </template>
         </ListItem>
       </List>
+      <!--  -->
+        <testmarkdown></testmarkdown>
+      <Row>
+        <Col>
+        
+        </Col>
+      </Row>
     </homeLayout>
   </div>
 </template>
 
 <script>
 import homeLayout from "_c/common/homeLayout";
+import testmarkdown from "../../../public/static/md/test.md"
 export default {
   name: "article_index",
   components: {
     homeLayout,
+    testmarkdown
   },
   data() {
     return {

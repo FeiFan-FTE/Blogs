@@ -60,12 +60,17 @@ export default {
     };
 
     const Colors = {
-      noun: "#588c73",
-      adj: "#f2e394",
-      v: "#d96459",
-      adv: "#f2ae72",
+      noun: "#434af9",
+      adj: "#ffA51d",
+      v: "#2e31be",
+      adv: "#191a35",
     };
-
+// const Colors = {
+//       noun: "#588c73",
+//       adj: "#f2e394",
+//       v: "#d96459",
+//       adv: "#f2ae72",
+//     };
     let graph;
     const layoutCfg = {
       type: "force",
