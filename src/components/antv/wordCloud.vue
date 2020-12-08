@@ -28,7 +28,7 @@ export default {
     let highlighting = false;
     let currentFocus;
     const width = document.getElementById("container").scrollWidth;
-    const height = document.getElementById("container").scrollHeight || 500;
+    const height = 800;
 
     const LIMIT_OVERFLOW_WIDTH = width;
     const LIMIT_OVERFLOW_HEIGHT = height;
