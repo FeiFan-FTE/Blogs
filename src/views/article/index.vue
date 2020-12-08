@@ -27,11 +27,12 @@
            <testmarkdown></testmarkdown>
         </Card>
         </Col> -->
-        <Col :span="24">
+        <!-- <Col :span="24">
           <markdown :editorData="mdData" :width="w"></markdown>
-        </Col>
+        </Col> -->
       </Row>
     </homeLayout>
+     <BackTop></BackTop>
   </div>
 </template>
 
