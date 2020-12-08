@@ -80,3 +80,21 @@ export const whichEvent = (function () {
         }
     }
 })()
+
+export const getTime = () => {
+    let cu_time = ''
+    let yy = new Date().getFullYear();
+    let mm = new Date().getMonth() + 1;
+    let dd = new Date().getDate();
+    let hh = new Date().getHours();
+    let mf =
+        new Date().getMinutes() < 10 ?
+        "0" + new Date().getMinutes() :
+        new Date().getMinutes();
+    let ss =
+        new Date().getSeconds() < 10 ?
+        "0" + new Date().getSeconds() :
+        new Date().getSeconds();
+    cu_time = yy + "年" + mm + "月" + dd + "日" + hh + ":" + mf + ":" + ss;
+    return cu_time
+}

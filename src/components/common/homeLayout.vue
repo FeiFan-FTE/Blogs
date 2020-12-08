@@ -67,7 +67,7 @@ import Copyright from "_c/copyright/copyright";
         },
         methods:{
             handleSelect(name){
-                console.log(name)
+              
                 this.$router.push({
                     name:name
                 })
