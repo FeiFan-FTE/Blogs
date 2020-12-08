@@ -23,7 +23,7 @@ class HttpRequest {
     getInsideConfig() {
 
         const config = {
-            baseURL: splitRouter(),
+            baseURL: this.baseUrl,
             headers: {
                 Authorization: `Bearer ${getToken()}`
             }

@@ -1,53 +1,104 @@
+1.如何快速安装Unity3D，Visual Stydio 2019
 
-### 1.如何快速安装Unity3D，Visual Stydio 2019
-下载地址： https://unity.cn/releases
-vs2019下载地址：https://visualstudio.microsoft.com/zh-hans/free-developer-offers/
+下载地址： [__https://unity.cn/releases__](https://unity.cn/releases)
 
+vs2019下载地址：[__https://visualstudio.microsoft.com/zh-hans/free-developer-offers/__](https://visualstudio.microsoft.com/zh-hans/free-developer-offers/)
 
+![](https://tcs.teambition.net/storage/311z7c44d52ebef050f45a7ef4a3aa144f34?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXo3YzQ0ZDUyZWJlZjA1MGY0NWE3ZWY0YTNhYTE0NGYzNCJ9.0RMPz-2P_V8DRC3YMArF8KOl2jb6tn4-Ua1MI8wsUnY&download=image.png "")
+
+![](https://tcs.teambition.net/storage/311z70c67f9374c4e31420ba118bfb42f4de?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXo3MGM2N2Y5Mzc0YzRlMzE0MjBiYTExOGJmYjQyZjRkZSJ9.UUwnMl-AhYKdsX6hQNhQZ5LdlHHrEEo-QEFL3iMdbsA&download=image.png "")
+
+![](https://tcs.teambition.net/storage/311z317ee444238fe303e8f53db23e0f625e?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXozMTdlZTQ0NDIzOGZlMzAzZThmNTNkYjIzZTBmNjI1ZSJ9.r_sy9AmN0H0yej4JDkA0UaZYxpfT7-FZzRCyrheOmMA&download=image.png "")
 
 常用快捷键：QWER
 
-其他入门教程https://www.youtube.com/watch?v=X7R3G_Tsbos&list=PLwDQt7s1o9J5eVv-im1jsASFS24dWWqip
+
+
+其他入门教程[__https://www.youtube.com/watch?v=X7R3G_Tsbos&list=PLwDQt7s1o9J5eVv-im1jsASFS24dWWqip__](https://www.youtube.com/watch?v=X7R3G_Tsbos&list=PLwDQt7s1o9J5eVv-im1jsASFS24dWWqip)
+
+![](https://tcs.teambition.net/storage/311z2dd7b4c8c5ac5f3c196ca6b99a5c8f2f?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXoyZGQ3YjRjOGM1YWM1ZjNjMTk2Y2E2Yjk5YTVjOGYyZiJ9.IZbLJ3Pk78DwYub8AYVqJNDlDiDLhYhvWF6qczBMUb8&download=image.png "")
 
 编写Unity 脚本需要VS2019，有语法提示方便快速编写脚本。
-2.unity3D开发可视化细节
-1.如何修改unity3D天空盒背景？
+
+## 2.unity3D开发可视化细节
+
+### 1.如何修改unity3D天空盒背景？
+
+![](https://tcs.teambition.net/storage/311z2a29b820ce6c442e172899045a4cd676?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXoyYTI5YjgyMGNlNmM0NDJlMTcyODk5MDQ1YTRjZDY3NiJ9.lpb3QKm2XyILVUiYwOyb1DbVFuaBFc4H8UNlaXsqArA&download=image.png "")
 
 在window--rendering-lighting setting下设置天空盒背景。如上图所示。
 
-2.如何设置PC下打包默认参数？
+
+
+### 2.如何设置PC下打包默认参数？
+
+![](https://tcs.teambition.net/storage/311ze495f8ce360901158fb26671f4a9176f?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXplNDk1ZjhjZTM2MDkwMTE1OGZiMjY2NzFmNGE5MTc2ZiJ9.R4hfprLFkRyZED7wPFnzTd7gcX_s6i7riDOxCU9besM&download=image.png "")
 
 shift+ctrl+B 快速打开打包界面，如上图所示。
 
-3.如何制作炫酷粒子特效？
-
-各个属性参数用法具体参考https://www.imooc.com/learn/1255
-
-4.如何快速C#入门教程？
-C#中文API：https://docs.microsoft.com/zh-cn/dotnet/csharp/
-视频教程地址：https://www.imooc.com/course/list?c=csharp
-
-5.如何在Unity3d中使用websocket?
-下载安装BestHTTP，https://blog.csdn.net/zcaixzy5211314/article/details/80202827
-
-6.如何在Unity3d中使用http请求？
-参考地址：https://zhuanlan.zhihu.com/p/64767229
-
-7.Unity3D Http网络通讯协议 带header头部的GET与POST方法
 
 
-8.提取公共地址写入ini
+### 3.如何制作炫酷粒子特效？
+
+![](https://tcs.teambition.net/storage/311zf86649bc3ae62ef66890ed4678e52d73?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXpmODY2NDliYzNhZTYyZWY2Njg5MGVkNDY3OGU1MmQ3MyJ9.eKyewjUdmkGOulJfljnAyf9qm9goQrPDKZO-zJVT6T0&download=image.png "")
+
+各个属性参数用法具体参考[__https://www.imooc.com/learn/1255__](https://www.imooc.com/learn/1255)
+
+
+
+### 4.如何快速C#入门教程？
+
+C#中文API：[__https://docs.microsoft.com/zh-cn/dotnet/csharp/__](https://docs.microsoft.com/zh-cn/dotnet/csharp/)
+
+视频教程地址：[__https://www.imooc.com/course/list?c=csharp__](https://www.imooc.com/course/list?c=csharp)
+
+
+
+### 5.如何在Unity3d中使用websocket?
+
+下载安装BestHTTP，[__https://blog.csdn.net/zcaixzy5211314/article/details/80202827__](https://blog.csdn.net/zcaixzy5211314/article/details/80202827)
+
+
+
+### 6.如何在Unity3d中使用http请求？
+
+参考地址：[__https://zhuanlan.zhihu.com/p/64767229__](https://zhuanlan.zhihu.com/p/64767229)
+
+![](https://tcs.teambition.net/storage/311z5da6ba7e3e2c770483fb72d91afc6e12?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXo1ZGE2YmE3ZTNlMmM3NzA0ODNmYjcyZDkxYWZjNmUxMiJ9.ulI5bNXIQE1YGPCK8RCiuCn_F7iPS8Lcnl4JHNvPTbQ&download=image.png "")
+
+### 7.Unity3D Http网络通讯协议 带header头部的GET与POST方法
+
+![](https://tcs.teambition.net/storage/311zc4c32d58e04ffeaa8be313aa98c5c3e4?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXpjNGMzMmQ1OGUwNGZmZWFhOGJlMzEzYWE5OGM1YzNlNCJ9.KJ6KySRsndJ4X6rIkulAQPY3t1zE4v1VaLieMJRuilk&download=image.png "")
+
+
+
+### 8.提取公共地址写入ini
+
+![](https://tcs.teambition.net/storage/311z0e168a6f36a4f61e7f7c388fdca4ac28?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXowZTE2OGE2ZjM2YTRmNjFlN2Y3YzM4OGZkY2E0YWMyOCJ9.M65oGzVbCdo9HjlA2-YlQqgAjVUOkSM7pnFQCpNF_e8&download=image.png "")
 
 需要安装INIParser包
 
-
-9.如何在UI上添加视频（启动炫酷等待视频）？
-
+![](https://tcs.teambition.net/storage/311z13cc2f9d06c71ccf3b25c9ddad165f07?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXoxM2NjMmY5ZDA2YzcxY2NmM2IyNWM5ZGRhZDE2NWYwNyJ9.xfQBHgCQ7t34_PXDB97HhCN1xKQu5Z5ybiZCZkaM51s&download=image.png "")
 
 
- 详细攻略地址：https://www.cnblogs.com/0kk470/p/10637034.html
-3.Unity3D素材资源
-1.官方资源库链接地址https://assetstore.unity.com/
 
-2.Unity3D模型下载地址https://www.aigei.com/unity3d/
+### 9.如何在UI上添加视频（启动炫酷等待视频）？
+
+![](https://tcs.teambition.net/storage/311z49eedfd884f8ea4988d7e47ef8ebf02a?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXo0OWVlZGZkODg0ZjhlYTQ5ODhkN2U0N2VmOGViZjAyYSJ9.5ReS2G4SlebgH9l0n7XimGlm6f4NIUWs0OOBpTIEgfo&download=image.png "")
+
+![](https://tcs.teambition.net/storage/311z9c372335ef35ed0a97c489c535a9dd91?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXo5YzM3MjMzNWVmMzVlZDBhOTdjNDg5YzUzNWE5ZGQ5MSJ9.hgCYz196GB95vXHgIpmFOvL-D29QChfmobRLRDlbn-Q&download=image.png "")
+
+![](https://tcs.teambition.net/storage/311z8e9b505593fb8ea16a0ee0387715acc5?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXo4ZTliNTA1NTkzZmI4ZWExNmEwZWUwMzg3NzE1YWNjNSJ9.AKM10WnDU_w38meIadAnNc4A9szUSGV25FlA0JvGNd4&download=image.png "")
+
+ 详细攻略地址：[__https://www.cnblogs.com/0kk470/p/10637034.html__](https://www.cnblogs.com/0kk470/p/10637034.html)
+
+## 3.Unity3D素材资源
+
+### 1.官方资源库链接地址[__https://assetstore.unity.com/__](https://assetstore.unity.com/)
+
+![](https://tcs.teambition.net/storage/311z671c18c2b87b54dc692dc95525f0120a?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXo2NzFjMThjMmI4N2I1NGRjNjkyZGM5NTUyNWYwMTIwYSJ9.lRP-B8I4b5uEJKCCkBdHr1cxZxsxhWjztU_qlO8D8Uw&download=image.png "")
+
+### 2.Unity3D模型下载地址[__https://www.aigei.com/unity3d/__](https://www.aigei.com/unity3d/)
+
+![](https://tcs.teambition.net/storage/311zb1549ecc595f6ff2773cddbf88c850cf?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9hcHBJZCI6IjU5Mzc3MGZmODM5NjMyMDAyZTAzNThmMSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYwODAxMTY2NCwiaWF0IjoxNjA3NDA2ODY0LCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzMxMXpiMTU0OWVjYzU5NWY2ZmYyNzczY2RkYmY4OGM4NTBjZiJ9.YUbzxaPGYvCbXJLWlXnhZPTSO4qhLxDRsw2EyeG9fRQ&download=image.png "")
 
