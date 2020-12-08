@@ -4,7 +4,7 @@
       autoplay
       :music="music"
       :mini="isMini"
-      :autoplay="true"
+      :autoplay="autoplay"
       :repeat='repeat'
       :volume='volume'
     />
@@ -30,6 +30,10 @@ export default {
     volume:{
         tpye:Number,
         default:0.1
+    },
+    autoplay:{
+      type:Boolean,
+      default:false
     }
   },
   data() {
@@ -63,9 +67,9 @@ export default {
     };
   },
   created() {
-    // const ADURL = "http://121.196.26.168/audio/";
-    // this.music.src = ADURL + "病变remix.mp3";
-    // this.music.title = "病变remix";
+    const ADURL = "http://121.196.26.168/audio/";
+    this.music.src = ADURL + "病变remix.mp3";
+    this.music.title = "病变remix";
   },
   methods: {},
 };

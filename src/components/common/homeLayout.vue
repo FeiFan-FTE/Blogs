@@ -3,10 +3,10 @@
          <div class="layout">
       <Layout>
         <Header>
-          <Menu mode="horizontal" theme="dark" active-name="1">
+          <Menu mode="horizontal" theme="dark" active-name="1" @on-select="handleSelect">
             <div class="layout-logo"></div>
             <div class="layout-nav">
-              <MenuItem name="1" v-for="item in menuList">
+              <MenuItem :name="item.herf" v-for="item in menuList">
                 <Icon :type="item.icon"></Icon>
                 {{item.title}}
               </MenuItem>
@@ -50,19 +50,27 @@ import Copyright from "_c/copyright/copyright";
                   {
                     icon:"ios-navigate",
                     title:'归档',
-                    herf:'index'
+                    herf:'blogs'
                 },
                   {
                     icon:"ios-navigate",
                     title:'关于我',
-                    herf:'me'
+                    herf:'resume'
                 },
                   {
                     icon:"ios-navigate",
                     title:'提问',
-                    herf:'index'
+                    herf:'question'
                 },
                 ]
+            }
+        },
+        methods:{
+            handleSelect(name){
+                console.log(name)
+                this.$router.push({
+                    name:name
+                })
             }
         }
     }

@@ -28,9 +28,10 @@ router.beforeEach((to, access, next) => {
     if (!token && to.name !== LOGIN_PAGE_NAME&& to.name!="login_forget") {
         // 未登录且要跳转的页面不是登录页
     
-        next({
-            name: LOGIN_PAGE_NAME // 跳转到登录页
-        })
+        // next({
+        //     name: LOGIN_PAGE_NAME // 跳转到登录页
+        // })
+        next()
         console.log(token)
     } else if (!token && to.name === LOGIN_PAGE_NAME&& to.name!="login_forget") {
         // 未登陆且要跳转的页面是登录页

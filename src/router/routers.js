@@ -17,6 +17,16 @@ export default[
     component:() => import('@/views/resume/index.vue')
 },
 {
+    path: '/blogs',
+    name: 'blogs',
+    component:() => import('@/views/article/index.vue')
+},
+{
+    path: '/question',
+    name: 'question',
+    component:() => import('@/views/question/index.vue')
+},
+{
     path: '/401',
     name: 'error_401',
 
