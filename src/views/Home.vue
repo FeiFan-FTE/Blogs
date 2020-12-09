@@ -12,6 +12,7 @@
       <!-- <Login></Login> -->
       <!-- <div><audioPlayer></audioPlayer> </div> -->
       <Tag checkable color="primary" v-if="time">{{ time }}</Tag>
+      <!-- <novnc :websockify='websockify'></novnc> -->
     </homeLayout>
   </div>
 </template>
@@ -23,6 +24,7 @@ import Scroller from "_c/common/scroller";
 
 import audioPlayer from "_c/common/audioPlayer";
 import { getTime } from "@/libs/util";
+import novnc from "_c/common/noVNC"
 export default {
   name: "Home",
   components: {
@@ -30,12 +32,14 @@ export default {
     Login,
     Scroller,
     audioPlayer,
+    novnc
   },
   data() {
     return {
       content: "更多功能正在全力开发中,敬请期待。。。",
       time: null,
       timer: null,
+      websockify:''
     };
   },
   created() {},
@@ -49,6 +53,7 @@ export default {
   },
   mounted() {
     this.currentTime();
+    // this.websockify = 'ws://pangolinlabs.cn:33584/websockify'
   },
   destroyed() {
     clearInterval(this.timer);

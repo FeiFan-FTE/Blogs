@@ -80,7 +80,7 @@ export const whichEvent = (function () {
         }
     }
 })()
-
+// 获取当前时间
 export const getTime = () => {
     let cu_time = ''
     let yy = new Date().getFullYear();
@@ -97,4 +97,48 @@ export const getTime = () => {
         new Date().getSeconds();
     cu_time = yy + "年" + mm + "月" + dd + "日" + hh + ":" + mf + ":" + ss;
     return cu_time
+}
+/* 
+防抖（debounce）
+ */
+
+export const debounce = (func, delay, immediate)=>{
+    let timer = null;
+    return function(){
+        var context = this;
+        var args = arguments;
+        if(timer) clearTimeout(timer);
+        if(immediate){
+            var doNow = !timer;
+            timer = setTimeout(function(){
+                timer = null;
+            },delay);
+            if(doNow){
+                func.apply(context,args);
+            }
+        }else{
+            timer = setTimeout(function(){
+                func.apply(context,args);
+            },delay);
+        }
+    }
+}
+
+/* 
+    节流
+*/
+
+export const  throttle = (func, delay)=>{
+    var timer = null;
+    return function(){
+        var context = this;
+        var args = arguments;
+        if(!timer){
+            timer = setTimeout(function(){
+                func.apply(context, args);
+                timer = null;
+            },delay);
+        }
+    }
+
 }

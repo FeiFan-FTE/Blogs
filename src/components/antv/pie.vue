@@ -7,6 +7,7 @@
 <script>
 import G2 from "@antv/g2";
 import DataSet from "@antv/data-set";
+import {debounce} from "@/libs/util"
 export default {
   name: "pie",
   props: {

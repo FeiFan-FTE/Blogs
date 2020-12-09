@@ -7,6 +7,7 @@
 <script>
 import G6 from "@antv/g6";
 import wordCloudData from '../../../public/static/json/wordCloud.json'
+import {debounce} from "@/libs/util"
 export default {
   name: "wordCloud",
   data() {
