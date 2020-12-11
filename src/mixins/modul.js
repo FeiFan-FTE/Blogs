@@ -23,6 +23,7 @@ export default {
         },
         handleClick(){
             this.modal1 = true
+            console.log(1)
         }
     },
     created () {

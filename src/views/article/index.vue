@@ -4,7 +4,7 @@
       <!--  -->
       <artcleList></artcleList>
       <Row>
-      
+       <Button @click="handleClick" type="primary">Open</Button>
         <Button @click="DrawerVal = true" type="primary">Open</Button>
         <Col :span="24"> </Col>
 
@@ -46,17 +46,19 @@ export default {
   data() {
     return {
       DrawerVal: false,
-    
     };
   },
   created() {
-  
   },
   methods: {
     handleOpen() {
       this.modal1 = true;
     },
+    // handleClick(){
+    //   console.log('click')
+    // }
   },
+  
 };
 </script>
 

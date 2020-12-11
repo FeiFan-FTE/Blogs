@@ -6,28 +6,29 @@
  */
 import {
 
-    localSave,
-    localRead
-  } from '@/libs/util'
-  
-  import config from '@/config'
-  
-  
-  export default {
-    state: {
-      local: localRead('local')?localRead('local'):'zh-CN',
+  localSave,
+  localRead
+} from '@/libs/util'
+
+import config from '@/config'
+
+
+export default {
+  state: {
+    userInfo: {},
+    local: localRead('local') ? localRead('local') : 'zh-CN',
+  },
+  getters: {
+
+  },
+  mutations: {
+    setLocal(state, lang) {
+      localSave('local', lang)
+      state.local = lang
     },
-    getters: {
-  
-    },
-    mutations: {
-      setLocal(state, lang) {
-        localSave('local', lang)
-        state.local = lang
-      },
-  
-    },
-    actions: {
-  
-    }
+
+  },
+  actions: {
+
   }
+}
