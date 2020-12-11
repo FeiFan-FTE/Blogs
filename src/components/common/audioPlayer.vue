@@ -33,7 +33,7 @@ export default {
     },
     autoplay:{
       type:Boolean,
-      default:false
+      default:true
     }
   },
   data() {

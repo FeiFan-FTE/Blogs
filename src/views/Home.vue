@@ -10,7 +10,7 @@
       <!-- 横向滚动通知 -->
       <Scroller :content="content"></Scroller>
       <!-- <Login></Login> -->
-      <!-- <div><audioPlayer></audioPlayer> </div> -->
+      <div><audioPlayer></audioPlayer> </div>
       <Tag checkable color="primary" v-if="time">{{ time }}</Tag>
       <!-- <novnc :websockify='websockify'></novnc> -->
     </homeLayout>

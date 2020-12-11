@@ -14,7 +14,7 @@ export default {
   },
   data() {
     return {
-        rfb:null
+      rfb: null,
     };
   },
   methods: {
@@ -28,6 +28,8 @@ export default {
   mounted() {
     this.$nextTick(() => {
       this.rfb = new RFB(this.$refs.novnc, this.websockify);
+      this.rfb._resizeSession = true;//开启自适应大小
+      this.rfb._scaleViewport = true;//开启自适应大小
     });
   },
 };

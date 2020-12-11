@@ -1,11 +1,5 @@
-/*
- * @Author: feifan
- * @Date: 2020-11-30 10:57:26
- * @LastEditors: feifan
- * @LastEditTime: 2020-11-30 10:57:26
- */
 export default {
-    ellipsis(str, len) {
+    ellipsis(str, len) { //截取字符串长度
         len = len ? len : 16
         var regexp = /[^\x00-\xff]/g;
         // 当字符串字节长度小于指定的字节长度时
