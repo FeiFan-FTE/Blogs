@@ -10,20 +10,11 @@
   </div>
 </template>
 <script>
-import { debounce } from "@/libs/util";
+
 export default {
   data() {
     return {};
-  },
-  created() {},
-  mounted() {
-    window.addEventListener("resize", debounce(this.getSize, 1000));
-  },
-  methods: {
-    getSize() {
-      console.log("size" + window.innerHeight);
-    },
-  },
+  }
 };
 </script>
 <style lang="stylus"></style>

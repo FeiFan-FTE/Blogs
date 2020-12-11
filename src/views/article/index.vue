@@ -4,7 +4,7 @@
       <List item-layout="vertical">
         <ListItem v-for="item in data" :key="item.title">
           <ListItemMeta :title="item.title" :description="item.description" />
-          <span @click="handleOpen">{{ item.content }}</span>
+          <span @click="handleClick">{{ item.content }}</span>
           <template slot="action">
             <li><Icon type="ios-star-outline" /> 123</li>
             <li><Icon type="ios-thumbs-up-outline" /> 234</li>
@@ -22,17 +22,20 @@
       <!--  -->
 
       <Row>
+      
         <Button @click="DrawerVal = true" type="primary">Open</Button>
         <Col :span="24"> </Col>
 
         <Drawer title="Basic Drawer" :closable="false" v-model="DrawerVal">
-          <p style="height: 900px">Some contents...</p>
+          {{replace}}
+          <p style="height: 900px">  <Button @click="handleView">测试</Button></p>
           <p>Some contents...</p>
           <p>Some contents...</p>
           <p>Some contents...</p>
           <p>Some contents...</p>
           <p>Some contents...</p>
           <p>Some contents...</p>
+        
         </Drawer>
       </Row>
     </homeLayout>
@@ -55,12 +58,15 @@ import homeLayout from "_c/common/homeLayout";
 
 import markdown from "_c/markdown/markdown";
 import { getMarkDown } from "@/api/common";
+import mixinsLink from '@/mixins/links';
+import mixinsModul from "@/mixins/modul"
 export default {
   name: "article_index",
   components: {
     homeLayout,
-    markdown,
+    markdown
   },
+  mixins: [mixinsLink,mixinsModul],
   data() {
     return {
       valueHalf: 2.5,
@@ -102,17 +108,9 @@ export default {
     getMarkDown(url).then((res) => {
       t.mdData = res.data;
     });
-  },
-  mounted() {
-    window.addEventListener("resize", this.handleSize);
+  
   },
   methods: {
-    ok() {
-      // this.$Message.info("Clicked ok");
-    },
-    cancel() {
-      // this.$Message.info("Clicked cancel");
-    },
     handleSize() {
       this.w = window.innerWidth * 0.55;
     },
