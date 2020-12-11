@@ -1,9 +1,4 @@
-/*
- * @Author: feifan
- * @Date: 2020-11-25 09:21:32
- * @LastEditors: feifan
- * @LastEditTime: 2020-12-03 14:15:34
- */
+
 import axios from 'axios'
 import route from '@/router/index'
 

@@ -399,6 +399,7 @@ export default {
       height,
       linkCenter: true,
       layout: layoutCfg,
+      // modes: false,
       modes: {
         default: ["drag-canvas"],
       },

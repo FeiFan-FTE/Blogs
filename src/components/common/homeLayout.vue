@@ -49,7 +49,7 @@ import Copyright from "_c/copyright/copyright";
                 },
                   {
                     icon:"ios-navigate",
-                    title:'归档',
+                    title:'文章',
                     herf:'blogs'
                 },
                   {
@@ -67,9 +67,8 @@ import Copyright from "_c/copyright/copyright";
         },
         methods:{
             handleSelect(name){
-              
                 this.$router.push({
-                    name:name
+                    name:name,
                 })
             }
         }

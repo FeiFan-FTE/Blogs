@@ -4,7 +4,7 @@
       <List item-layout="vertical">
         <ListItem v-for="item in data" :key="item.title">
           <ListItemMeta :title="item.title" :description="item.description" />
-          {{ item.content }}
+          <span @click="handleOpen">{{ item.content }}</span>
           <template slot="action">
             <li><Icon type="ios-star-outline" /> 123</li>
             <li><Icon type="ios-thumbs-up-outline" /> 234</li>
@@ -22,38 +22,51 @@
       <!--  -->
 
       <Row>
-        <!-- <Col>
-         <Card>
-           <testmarkdown></testmarkdown>
-        </Card>
-        </Col> -->
-        <!-- <Col :span="24">
-          <markdown :editorData="mdData" :width="w"></markdown>
-        </Col> -->
+        <Button @click="DrawerVal = true" type="primary">Open</Button>
+        <Col :span="24"> </Col>
+
+        <Drawer title="Basic Drawer" :closable="false" v-model="DrawerVal">
+          <p style="height: 900px">Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+        </Drawer>
       </Row>
     </homeLayout>
-     <BackTop></BackTop>
+    <Modal
+      v-model="modal1"
+      title="Common Modal dialog box title"
+      width="60"
+      footer-hide
+      @on-ok="ok"
+      @on-cancel="cancel"
+    >
+      <markdown :editorData="mdData" :width="w"></markdown>
+    </Modal>
+    <BackTop></BackTop>
   </div>
 </template>
 
 <script>
 import homeLayout from "_c/common/homeLayout";
-// import testmarkdown from "../../../public/static/md/test.md"
 
-import axios from "axios";
 import markdown from "_c/markdown/markdown";
 import { getMarkDown } from "@/api/common";
 export default {
   name: "article_index",
   components: {
     homeLayout,
-    // testmarkdown,
     markdown,
   },
   data() {
     return {
       valueHalf: 2.5,
       mdData: "",
+      modal1: false,
+      DrawerVal: false,
       w: 1366,
       data: [
         {
@@ -84,13 +97,29 @@ export default {
   },
   created() {
     let t = this;
-    const url = "static/md/test.md";
+    t.handleSize();
+    const url = "static/md/css基础题.md";
     getMarkDown(url).then((res) => {
-      console.log(res);
       t.mdData = res.data;
     });
   },
-  methods: {},
+  mounted() {
+    window.addEventListener("resize", this.handleSize);
+  },
+  methods: {
+    ok() {
+      // this.$Message.info("Clicked ok");
+    },
+    cancel() {
+      // this.$Message.info("Clicked cancel");
+    },
+    handleSize() {
+      this.w = window.innerWidth * 0.55;
+    },
+    handleOpen() {
+      this.modal1 = true;
+    },
+  },
 };
 </script>
 

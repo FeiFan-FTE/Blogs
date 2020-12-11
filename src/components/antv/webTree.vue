@@ -39,7 +39,20 @@ export default {
     createWebTree() {
       let t = this;
       t.$refs.containerTree.innerHTML = ``;
-     
+    //  {
+    //       default: [
+    //         {
+    //           type: "collapse-expand",
+    //           onChange: function onChange(item, collapsed) {
+    //             const data = item.get("model").webTreeData;
+    //             data.collapsed = collapsed;
+    //             return true;
+    //           },
+    //         },
+    //         "drag-canvas",
+    //         "zoom-canvas",
+    //       ],
+    //     }
       t.graph = new G6.TreeGraph({
         container: t.$refs.containerTree,
         width: t.width,

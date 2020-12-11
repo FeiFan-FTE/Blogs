@@ -1,19 +1,21 @@
 <template>
   <div>
     <homeLayout>
-         <Split v-model="split">
+      <!-- <Split v-model="split">
             <div slot="left" >
             
             </div>
             <div slot="right" >
-                    <markdown
-                    width="600"
-                    :editorData="content"
-                    defaultOpen="edit"
-                    toolbarsFlag="true"
-                ></markdown>
+               
             </div>
-        </Split>
+        </Split> -->
+      <markdown
+        :width="editer.w"
+        :height="editer.h"
+        :editorData="content"
+        defaultOpen="edit"
+        :toolbarsFlag="toolbarsFlag"
+      ></markdown>
     </homeLayout>
   </div>
 </template>
@@ -30,11 +32,27 @@ export default {
   data() {
     return {
       content: "",
-      split:0.3
+      split: 0.3,
+      toolbarsFlag: true,
+      editer:{
+        w:600,
+        h:600
+      }
     };
   },
-  created() {},
-  methods: {},
+  created() {
+    this.handleSize()
+  },
+  mounted(){
+    window.addEventListener('resize',this.handleSize)
+  },
+  methods: {
+    handleSize(){
+        let t = this
+        t.editer.w = window.innerWidth-200;
+        t.editer.h = window.innerHeight-200;
+    }
+  },
 };
 </script>
 
